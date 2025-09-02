@@ -14,20 +14,35 @@ public class C01Surver {
 	 //192.168.16.10
 	 System.out.println("[INFO] SERVER SOCKET LISTENING");
 	 
-	 Socket client = server.accept(); // 1회 (통신대기)
-	 OutputStream out = client.getOutputStream(); //고객 정보 전달(받기)위해 outputstrema 사용
-	 DataOutputStream dout = new DataOutputStream(out); //byte -> char
-	 //DataOutputStream 자체가 byte만 다룸
-	 dout.writeUTF("[SERVER] WELCOME TO SERVER + " +  new Date());
-	 dout.flush();
+//	 //1회 접속
+//	 Socket client = server.accept(); // 1회 (통신대기) //소캣생성
+//	 OutputStream out = client.getOutputStream(); //고객 정보 전달(받기)위해 outputstrema 사용
+//	 DataOutputStream dout = new DataOutputStream(out); //byte -> char
+//	 //DataOutputStream 자체가 byte만 다룸
+//	 dout.writeUTF("[SERVER] WELCOME TO SERVER + " +  new Date());
+//	 dout.flush();
+//	 dout.close();
+//	 out.close();
+//	 client.close();
+//
+//	 server.close();
+//	 
+//	 System.out.println("[INFO] SERVER EXIT");
 	 
-	 dout.close();
-	 out.close();
-	 client.close();
-	 server.close();
+	 while(true) {
+		 Socket client = server.accept(); // 1회 (통신대기) //소캣생성
+		 OutputStream out = client.getOutputStream(); //고객 정보 전달(받기)위해 outputstrema 사용
+		 DataOutputStream dout = new DataOutputStream(out); //byte -> char
+		 //DataOutputStream 자체가 byte만 다룸
+		 dout.writeUTF("[SERVER] WELCOME TO SERVER + " +  new Date());
+		 dout.flush();
+		 dout.close();
+		 out.close();
+		 client.close();
+	 }
 	 
-	 System.out.println("[INFO] SERVER EXIT");
-	
 	 
-}
+
+ 
+ }
 }
