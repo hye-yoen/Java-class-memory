@@ -29,7 +29,7 @@ public class ClientMain {
 		 //
 		 th1.start();
 		 th2.start();
-		//메인스레드 같이 종료???
+		//메인쓰레드 종료까지 대기
 		 th1.join();
 		 th2.join();
 		 //자원제거
