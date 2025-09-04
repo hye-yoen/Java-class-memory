@@ -30,8 +30,8 @@ public class C03MethodOverriding {
 		cat .sound();
 		
 	System.out.println("-----------------");
-	animal = dog; //상위클래스형 참조변수 = 하위객체 
-	//(업 캐스팅 / 기본적으로 자동 형변환 / 하위객체가 재정의를 했다면 재정의(확장/추가 아님)를 했다면 재정의 출력 )
+	animal = dog; //상위클래스형 참조변수 = 하위객체 업 캐스팅 
+	// 기본적으로 자동 형변환 / 하위객체가 재정의를 했다면 재정의(확장/추가 아님)를 했다면 재정의 출력 )
 	animal.sound(); // 상위 클래스참조 변수가 하위클래스의 힙 영역에 연결(힙영역은 method == Class(공유))
 	animal = cat;
 	animal.sound();
