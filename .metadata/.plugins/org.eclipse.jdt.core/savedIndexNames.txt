@@ -1,7 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Administrator\Downloads\a\Java-class-memory\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3782460641.index
-350886874.index
-1306649634.index
-2798894641.index
-2770856813.index

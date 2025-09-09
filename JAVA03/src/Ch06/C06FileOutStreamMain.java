@@ -11,7 +11,8 @@ public class C06FileOutStreamMain{
 		// TODO Auto-generated method stub
 		
 		OutputStream out = new FileOutputStream("C:\\IOTEST\\test4.txt");
-		out.write("가나다".getBytes(StandardCharsets.UTF_8));
+		out.write("가나다".getBytes(StandardCharsets.UTF_8)); //getBytes 해당 문자열을 byte형태로 나눔		
+//		out.write('가');
 		out.write('a');
 		out.write('b');
 		out.write('c');

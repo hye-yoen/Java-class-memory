@@ -16,8 +16,8 @@ public class C05FileInputStreamMain {
 			int data = fin.read(buff);//buff만큼의 데이터 읽기
 			if(data == -1) 
 				break;
-//			System.out.print(data);
-			stringbuffer.append((char)data);
+//			stringbuffer.append((char)data);
+			System.out.print(buff);
 			
 		}
 		System.out.println("총길이 : "+stringbuffer.length());
